@@ -1,0 +1,83 @@
+header{
+    background-color: yellow;
+    color: red;
+    text-align: center;
+}
+
+.seccion1{
+    background-color: lightskyblue;
+    padding: 2em;
+}
+
+.contenido1{
+    color: blue;
+    animation: mover 15s ease-in-out infinite;
+    position: relative;
+}
+
+@keyframes mover {
+    0%{left: 100%;}
+    100%{left: -100%;}
+
+    0%{font-size: 20px;}
+    100%{font-size: 50px;}
+
+    0%{color: blue;}
+    100%{color: green;}
+    
+}
+
+.imagen1{
+    animation: giro 20s ease-in-out 1;
+}
+
+@keyframes giro {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+
+.seccion2{
+    background-color: lightpink;
+    padding: 2em;
+}
+
+.imagen2{
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+}
+
+.imagen2:hover{
+    width: 200px;
+    height: 200px;
+}
+
+.imagen3{
+    position: relative;
+    transition: 5s;
+}
+
+.imagen3:hover{
+    transform: translate(100px, 50px);
+}
+
+.caja{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+
+}
+
+.caja:hover{
+    transform: scale(1.5) rotate(-20deg);
+
+}
+
+footer{
+    background-color: red;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
